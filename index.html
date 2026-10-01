@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeDess</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Comfortaa:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+
+      <div class="header__logo">
+        <a href="index.html">LeDess</a>
+      </div>
+
+      <button class="menu-close" type="button" aria-label="Закрыть меню">
+        ✕
+      </button>
+
+      <nav class="header__navigation">
+        <ul class="header__navigation-list">
+          <li><a href="#about">О бренде</a></li>
+          <li><a href="#works">Наши работы</a></li>
+          <li><a href="#process">Процесс</a></li>
+          <li><a href="#stories">Истории</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#footer">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__button">
+        <a href="#works" class="button">Смотреть работы</a>
+      </div>
+
+      <!-- Кнопка бургера -->
+      <button class="burger" type="button" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </header>
+    <section class="banner">
+      <div class="banner__content">
+        <p class="banner__text-top">Изделия ручной работы</p>
+        <h1 class="banner__header">Маленькие вещи с&nbsp;большой душой</h1>
+        <p class="banner__description">Игрушки, шапки и&nbsp;другие вязаные изделия. С&nbsp;любовью, заботой и&nbsp;вниманием к&nbsp;каждой детали.</p>
+        <div class="banner__button">
+          <a href="#works" class="button">Смотреть работы</a>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+    <div class="about__content">
+      <div class="about__image">
+        <img
+          src="img/knitting.png"
+          alt="Вязаные игрушки и изделия ручной работы LeDess"
+          class="about__photo"
+        >
+      </div>
+      <div class="about__info">
+        <p class="about__subtitle">О бренде</p>
+        <h2 class="about__title">LeDess</h2>
+        <p class="about__description">
+          LeDess — бренд вязаных игрушек и изделий ручной работы.
+        </p>
+        <p class="about__description">
+          Мы создаём уютные и тёплые вещи, которые наполняют дом
+          особой атмосферой и дарят радость детям и взрослым.
+        </p>
+        <p class="about__accent">
+          Каждое изделие создано вручную с любовью к деталям.
+        </p>
+      </div>
+  </div>
+    </section>
+    <section id="works">
+      <h2 class="work__header">Наши работы</h2>
+      <div class="works">
+        <div class="work__card">
+          <img
+            class="work__photo"
+            src="img/works/work-1.png"
+            alt="Лисенок"
+          >
+          <div class="work__info">
+            <p class="work__name">Лисенок</p>
+            <p class="work__material">Хлопок</p>
+          </div>
+        </div>
+        <div class="work__card">
+          <img
+            class="work__photo"
+            src="img/works/work-2.png"
+            alt="Снуд"
+          >
+          <div class="work__info">
+            <p class="work__name">Снуд</p>
+            <p class="work__material">Хлопок</p>
+          </div>
+        </div>
+        <div class="work__card">
+          <img
+            class="work__photo"
+            src="img/works/work-3.png"
+            alt="Шапка"
+          >
+          <div class="work__info">
+            <p class="work__name">Шапка</p>
+            <p class="work__material">Хлопок</p>
+          </div>
+        </div>
+        <div class="work__card">
+          <img
+            class="work__photo"
+            src="img/works/work-4.png"
+            alt="Мишка"
+          >
+          <div class="work__info">
+            <p class="work__name">Мишка</p>
+            <p class="work__material">Хлопок</p>
+          </div>
+        </div>
+        <div class="work__card">
+          <img
+            class="work__photo"
+            src="img/works/work-5.png"
+            alt="Подушка Ромашка"
+          >
+          <div class="work__info">
+            <p class="work__name">Подушка Ромашка</p>
+            <p class="work__material">Хлопок</p>
+          </div>
+        </div>
+        <div class="work__card">
+          <img
+            class="work__photo"
+            src="img/works/work-6.png"
+            alt="Слоненок"
+          >
+          <div class="work__info">
+            <p class="work__name">Слоненок</p>
+            <p class="work__material">Хлопок</p>
+          </div>
+        </div>
+        <div class="work__card">
+          <img
+            class="work__photo"
+            src="img/works/work-7.png"
+            alt="Зайка"
+          >
+          <div class="work__info">
+            <p class="work__name">Зайка</p>
+            <p class="work__material">Хлопок</p>
+          </div>
+        </div>
+        <div class="work__card">
+          <img
+            class="work__photo"
+            src="img/works/work-8.png"
+            alt="Пинетки"
+          >
+          <div class="work__info">
+            <p class="work__name">Пинетки</p>
+            <p class="work__material">Хлопок</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="process">
+      <h2 class="process__header">Как рождается работа</h2>
+      <div class="process__items">
+        <div class="process__item">
+          <img src="img/process/process-1.png" alt="Ручная работа" class="process__photo">
+          <div class="process__info">
+            <p class="process__title">Идея</p>
+            <p class="process__description">Вдохновляюсь окружающим миром, образами, природой и&nbsp;маленькими радостями.</p>
+          </div>
+        </div>
+
+        <div class="process__item">
+          <img src="img/process/process-2.png" alt="Ручная работа" class="process__photo">
+          <div class="process__info">
+            <p class="process__title">Подбор пряжи</p>
+            <p class="process__description">Подбираю цвет, фактуру и&nbsp;оттенки, чтобы подчеркнуть характер будущего изделия.</p>
+          </div>
+        </div>
+
+        <div class="process__item">
+          <img src="img/process/process-3.png" alt="Ручная работа" class="process__photo">
+          <div class="process__info">
+            <p class="process__title">Вязание</p>
+            <p class="process__description">Петелька за петелькой создаётся форма, объём и&nbsp;неповторимый образ изделия.</p>
+          </div>
+        </div>
+
+        <div class="process__item">
+          <img src="img/process/process-4.png" alt="Ручная работа" class="process__photo">
+          <div class="process__info">
+            <p class="process__title">Детали</p>
+            <p class="process__description">Добавляю последние штрихи, которые делают изделие особенным.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stories" id="stories">
+  <section class="stories" id="stories">
+    <h2 class="stories__title">Истории изделий</h2>
+
+    <div class="stories__slider swiper">
+      <div class="stories__wrapper swiper-wrapper">
+
+        <article class="stories__slide swiper-slide">
+          <div class="stories__card">
+            <img
+              src="img/stories/story-1.png"
+              alt="Мишка Тедди"
+              class="stories__photo"
+            >
+
+            <div class="stories__info">
+              <h3 class="stories__name">Мишка Тедди</h3>
+
+              <p class="stories__text">
+                Небольшой мишка, созданный в подарок для ребёнка.
+                Мягкая пряжа и спокойные оттенки сделали его особенно
+                уютным и тёплым.
+              </p>
+
+              <a href="#" class="stories__link">Читать историю</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="stories__slide swiper-slide">
+          <div class="stories__card">
+            <img
+              src="img/stories/story-2.png"
+              alt="Зайчик Лу"
+              class="stories__photo"
+            >
+
+            <div class="stories__info">
+              <h3 class="stories__name">Зайчик Лу</h3>
+
+              <p class="stories__text">
+                Этот зайчик появился из идеи создать простую
+                и нежную игрушку, которая станет маленьким другом
+                и будет радовать каждый день.
+              </p>
+
+              <a href="#" class="stories__link">Читать историю</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="stories__slide swiper-slide">
+          <div class="stories__card">
+            <img
+              src="img/stories/story-3.png"
+              alt="Котёнок Мия"
+              class="stories__photo"
+            >
+
+            <div class="stories__info">
+              <h3 class="stories__name">Слоненок Мия</h3>
+
+              <p class="stories__text">
+                Мия создавалась как подарок для девочки.
+                Нежные цвета, выразительная мордочка и маленькие
+                детали помогли передать её добрый характер.
+              </p>
+
+              <a href="#" class="stories__link">Читать историю</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="stories__slide swiper-slide">
+          <div class="stories__card">
+            <img
+              src="img/stories/story-4.png"
+              alt="Лисёнок Руди"
+              class="stories__photo"
+            >
+
+            <div class="stories__info">
+              <h3 class="stories__name">Лисёнок Руди</h3>
+
+              <p class="stories__text">
+                Тёплые оттенки пряжи и пушистый хвост сделали
+                Руди настоящей осенней игрушкой с уютным настроением.
+              </p>
+
+              <a href="#" class="stories__link">Читать историю</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <button
+        class="stories__button stories__button--prev swiper-button-prev"
+        type="button"
+        aria-label="Предыдущая история"
+      ></button>
+
+      <button
+        class="stories__button stories__button--next swiper-button-next"
+        type="button"
+        aria-label="Следующая история"
+      ></button>
+    </div>
+
+    <div class="stories__pagination swiper-pagination"></div>
+</section>
+<section class="reviews" id="reviews">
+  <h2 class="reviews__title">Слова, которые греют</h2>
+
+  <div class="reviews__slider swiper">
+    <div class="reviews__wrapper swiper-wrapper">
+
+      <article class="reviews__slide swiper-slide">
+        <div class="reviews__card">
+          <p class="reviews__text">
+            Очень красивая игрушка! Всё выполнено аккуратно,
+            а сама работа выглядит невероятно уютно.
+          </p>
+
+          <p class="reviews__author">— Анна</p>
+        </div>
+      </article>
+
+      <article class="reviews__slide swiper-slide">
+        <div class="reviews__card">
+          <p class="reviews__text">
+            Заказывала мишку в подарок. Получился замечательный,
+            добрый и очень милый подарок.
+          </p>
+
+          <p class="reviews__author">— Мария</p>
+        </div>
+      </article>
+
+      <article class="reviews__slide swiper-slide">
+        <div class="reviews__card">
+          <p class="reviews__text">
+            Спасибо за такую чудесную работу. Видно,
+            что каждая деталь сделана с любовью.
+          </p>
+
+          <p class="reviews__author">— Екатерина</p>
+        </div>
+      </article>
+
+    </div>
+
+    <button
+      class="reviews__button reviews__button--prev swiper-button-prev"
+      type="button"
+      aria-label="Предыдущий отзыв"
+    ></button>
+
+    <button
+      class="reviews__button reviews__button--next swiper-button-next"
+      type="button"
+      aria-label="Следующий отзыв"
+    ></button>
+  </div>
+
+  <div class="reviews__pagination swiper-pagination"></div>
+</section>
+    <footer>
+      <section id="footer" class="footer">
+        <h2 class="footer__header">Спасибо, что заглянули</h2>
+        <p class="footer__text">Буду рада, если мои работы подарили Вам немного тепла и&nbsp;вдозновения</p>
+        <div class="footer__info">
+          <div class="footer__logo">
+            <a href="index.html">LeDess</a>
+          </div>
+          <div class="footer__socials">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link footer__link--mail">Почта</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link footer__link--telegram">Telegram</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link footer__link--geo">Адрес</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__copyright">
+            ©&nbsp;2026&nbsp;LeDess. Все права защищены.
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
