@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LeDess</title>
+  <title>LeDess — Вязаные игрушки и изделия ручной работы</title>
+  <meta name="description" content="LeDess — вязаные игрушки, шапки и изделия ручной работы. Уютные вещи, созданные с любовью и вниманием к каждой детали.">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +15,8 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
+  <link rel="preload" as="image" href="img/banner_bg_desktop-2.webp?v=4" fetchpriority="high" media="(min-width: 601px)">
+  <link rel="preload" as="image" href="img/banner_bg_mobile.webp" fetchpriority="high" media="(max-width: 600px)">
 </head>
 <body>
   <div class="container">
@@ -66,6 +70,7 @@
           src="img/knitting.webp"
           alt="Вязаные игрушки и изделия ручной работы LeDess"
           class="about__photo"
+          loading="lazy"
         >
       </div>
       <div class="about__info">
@@ -104,7 +109,7 @@
       <div class="works">
 
       <div class="work__card" data-category="toys" data-gallery='["img/works/bunny-1.webp", "img/works/bunny-2.webp", "img/works/bunny-3.webp"]'>
-        <img class="work__photo" src="img/works/bunny-1.webp" alt="Зайка с погремушкой розовый">
+        <img class="work__photo" src="img/works/bunny-1.webp" alt="Зайка с погремушкой розовый" loading="lazy">
         <div class="work__info">
           <p class="work__name">Зайка с&nbsp;погремушкой розовый</p>
           <p class="work__material">Для самых маленьких</p>
@@ -112,7 +117,7 @@
       </div>
 
       <div class="work__card" data-category="toys" data-gallery='["img/works/cheb.webp"]'>
-        <img class="work__photo" src="img/works/cheb.webp" alt="Чебурашка">
+        <img class="work__photo" src="img/works/cheb.webp" alt="Чебурашка" loading="lazy">
         <div class="work__info">
           <p class="work__name">Чебурашка</p>
           <p class="work__material">Военный талисман</p>
@@ -120,7 +125,7 @@
       </div>
 
       <div class="work__card" data-category="hats" data-gallery='["img/works/hat-1.webp", "img/works/hat-2.webp", "img/works/hat-3.webp"]'>
-        <img class="work__photo" src="img/works/hat-1.webp" alt="Шапка">
+        <img class="work__photo" src="img/works/hat-1.webp" alt="Шапка" loading="lazy">
         <div class="work__info">
           <p class="work__name">Шапка</p>
           <p class="work__material">Теплая и&nbsp;удобная</p>
@@ -128,7 +133,7 @@
       </div>
 
     <div class="work__card" data-category="toys" data-gallery='["img/works/bunny2.webp"]'>
-      <img class="work__photo" src="img/works/bunny2.webp" alt="Зайка">
+      <img class="work__photo" src="img/works/bunny2.webp" alt="Зайка" loading="lazy">
       <div class="work__info">
         <p class="work__name">Зайка</p>
         <p class="work__material">Военный талисман</p>
@@ -136,7 +141,7 @@
     </div>
 
     <div class="work__card" data-category="toys" data-gallery='["img/works/bunny3.webp"]'>
-      <img class="work__photo" src="img/works/bunny3.webp" alt="Зайка с погремушкой оранжевый">
+      <img class="work__photo" src="img/works/bunny3.webp" alt="Зайка с погремушкой оранжевый" loading="lazy">
       <div class="work__info">
         <p class="work__name">Зайка с&nbsp;погремушкой оранжевый</p>
         <p class="work__material">Для самых маленьких</p>
@@ -144,7 +149,7 @@
     </div>
 
     <div class="work__card" data-category="toys" data-gallery='["img/works/teddy.webp"]'>
-      <img class="work__photo" src="img/works/teddy.webp" alt="Мишка">
+      <img class="work__photo" src="img/works/teddy.webp" alt="Мишка" loading="lazy">
       <div class="work__info">
         <p class="work__name">Мишка</p>
         <p class="work__material">Военный талисман</p>
@@ -163,7 +168,7 @@
     <h2 class="process__header">Как рождается работа</h2>
     <div class="process__items">
       <div class="process__item">
-        <img src="img/process/process-1.webp" alt="Ручная работа" class="process__photo">
+        <img src="img/process/process-1.webp" alt="Ручная работа" class="process__photo" loading="lazy">
         <div class="process__info">
           <p class="process__title">Идея</p>
           <p class="process__description">Вдохновляюсь окружающим миром, образами, природой и&nbsp;маленькими радостями.</p>
@@ -171,7 +176,7 @@
       </div>
 
       <div class="process__item">
-        <img src="img/process/process-2.webp" alt="Ручная работа" class="process__photo">
+        <img src="img/process/process-2.webp" alt="Ручная работа" class="process__photo" loading="lazy">
         <div class="process__info">
           <p class="process__title">Подбор пряжи</p>
           <p class="process__description">Подбираю цвет, фактуру и&nbsp;оттенки, чтобы подчеркнуть характер будущего изделия.</p>
@@ -179,7 +184,7 @@
       </div>
 
       <div class="process__item">
-        <img src="img/process/process-3.webp" alt="Ручная работа" class="process__photo">
+        <img src="img/process/process-3.webp" alt="Ручная работа" class="process__photo" loading="lazy">
         <div class="process__info">
           <p class="process__title">Вязание</p>
           <p class="process__description">Петелька за петелькой создаётся форма, объём и&nbsp;неповторимый образ изделия.</p>
@@ -187,7 +192,7 @@
       </div>
 
       <div class="process__item">
-        <img src="img/process/process-4.webp" alt="Ручная работа" class="process__photo">
+        <img src="img/process/process-4.webp" alt="Ручная работа" class="process__photo" loading="lazy">
         <div class="process__info">
           <p class="process__title">Детали</p>
           <p class="process__description">Добавляю последние штрихи, которые делают изделие особенным.</p>
