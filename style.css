@@ -285,7 +285,7 @@ a:hover{
   left: 50%;
   width: 100vw;
   transform: translateX(-50%);
-  background: url("img/banner_bg_desktop-2.png?v=4") right center / cover no-repeat;
+  background: url("img/banner_bg_desktop-2.webp?v=4") right center / cover no-repeat;
 }
 
 @media (max-width: 600px) {
@@ -293,7 +293,7 @@ a:hover{
     height: 820px;
   }
   .banner::before {
-    background: url("img/banner_bg_mobile.png") center / cover no-repeat;
+    background: url("img/banner_bg_mobile.webp") center / cover no-repeat;
   }
   .banner__content {
     gap: 20px !important;
@@ -359,7 +359,7 @@ a:hover{
     width: 44px;
     height: 44px;
     transform: translateY(-50%);
-    background: url("img/leave.png") center / contain no-repeat;
+    background: url("img/leave.webp") center / contain no-repeat;
   }
 }
 
@@ -647,7 +647,7 @@ body.gallery-open {
   height: 44px;
   right: 30px;
   transform: translateY(-50%);
-  background: url("img/green-heart.png") center / contain no-repeat;
+  background: url("img/green-heart.webp") center / contain no-repeat;
 }
 
 .process__items {
@@ -763,7 +763,7 @@ body.gallery-open {
   margin-left: 10px;
   margin-bottom: 20px;
   vertical-align: middle;
-  background: url(img/heart.png) center / contain no-repeat;
+  background: url(img/heart.webp) center / contain no-repeat;
   transform: rotate(25deg);
 }
 

@@ -352,32 +352,32 @@ document.addEventListener('keydown', event => {
 
 // попап истории
 
-const storyPopup = document.querySelector('#storyPopup');
-const storyPopupClose = document.querySelector('.story-popup__close');
-const storyPopupOverlay = document.querySelector('.story-popup__overlay');
-const storyLinks = document.querySelectorAll('.stories__link');
+// const storyPopup = document.querySelector('#storyPopup');
+// const storyPopupClose = document.querySelector('.story-popup__close');
+// const storyPopupOverlay = document.querySelector('.story-popup__overlay');
+// const storyLinks = document.querySelectorAll('.stories__link');
 
-function openStoryPopup(event) {
-  event.preventDefault();
+// function openStoryPopup(event) {
+//   event.preventDefault();
 
-  storyPopup.classList.add('active');
-  storyPopup.setAttribute('aria-hidden', 'false');
-}
+//   storyPopup.classList.add('active');
+//   storyPopup.setAttribute('aria-hidden', 'false');
+// }
 
-function closeStoryPopup() {
-  storyPopup.classList.remove('active');
-  storyPopup.setAttribute('aria-hidden', 'true');
-}
+// function closeStoryPopup() {
+//   storyPopup.classList.remove('active');
+//   storyPopup.setAttribute('aria-hidden', 'true');
+// }
 
-storyLinks.forEach(link => {
-  link.addEventListener('click', openStoryPopup);
-});
+// storyLinks.forEach(link => {
+//   link.addEventListener('click', openStoryPopup);
+// });
 
-storyPopupClose.addEventListener('click', closeStoryPopup);
-storyPopupOverlay.addEventListener('click', closeStoryPopup);
+// storyPopupClose.addEventListener('click', closeStoryPopup);
+// storyPopupOverlay.addEventListener('click', closeStoryPopup);
 
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape') {
-    closeStoryPopup();
-  }
-});
+// document.addEventListener('keydown', event => {
+//   if (event.key === 'Escape') {
+//     closeStoryPopup();
+//   }
+// });
