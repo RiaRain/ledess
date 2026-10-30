@@ -259,24 +259,41 @@ let currentPhotoIndex = 0;
 
 // Обновление фотографии
 
+const galleryLoader = document.querySelector('.gallery__loader');
+
 function updateGallery() {
-  if (!galleryImage || currentPhotos.length === 0) {
-    return;
-  }
+  if (!galleryImage || currentPhotos.length === 0) return;
 
-  galleryImage.src = currentPhotos[currentPhotoIndex];
+  const photo = new Image();
+  const photoSrc = currentPhotos[currentPhotoIndex];
 
-  if (currentPhotoIndex === 0) {
-    galleryPrevButton.classList.add('gallery__button--disabled');
-  } else {
-    galleryPrevButton.classList.remove('gallery__button--disabled');
-  }
+  if (galleryLoader) galleryLoader.hidden = false;
+  galleryImage.classList.add('gallery__image--loading');
 
-  if (currentPhotoIndex === currentPhotos.length - 1) {
-    galleryNextButton.classList.add('gallery__button--disabled');
-  } else {
-    galleryNextButton.classList.remove('gallery__button--disabled');
-  }
+  photo.onload = () => {
+    galleryImage.src = photoSrc;
+    galleryImage.classList.remove('gallery__image--loading');
+
+    if (galleryLoader) galleryLoader.hidden = true;
+  };
+
+  photo.onerror = () => {
+    if (galleryLoader) galleryLoader.hidden = true;
+    galleryImage.classList.remove('gallery__image--loading');
+    console.error('Не удалось загрузить изображение:', photoSrc);
+  };
+
+  photo.src = photoSrc;
+
+  galleryPrevButton.classList.toggle(
+    'gallery__button--disabled',
+    currentPhotoIndex === 0
+  );
+
+  galleryNextButton.classList.toggle(
+    'gallery__button--disabled',
+    currentPhotoIndex === currentPhotos.length - 1
+  );
 }
 
 // Открытие галереи

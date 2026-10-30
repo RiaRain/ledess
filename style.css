@@ -526,6 +526,7 @@ a:hover{
 }
 
 .gallery__image-wrapper {
+  position: relative;
   max-width: 800px;
   max-height: 85vh;
   text-align: center;
@@ -588,6 +589,33 @@ a:hover{
   right: -70px;
 }
 
+.gallery__loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e8dfd6;
+  border-top-color: #9b7963;
+  border-radius: 50%;
+  animation: gallery-spin 0.8s linear infinite;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.gallery__loader[hidden] {
+  display: none;
+}
+
+@keyframes gallery-spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.gallery__image--loading {
+  opacity: 0;
+}
 /* Неактивная кнопка */ 
 
 .gallery__button--disabled { 
