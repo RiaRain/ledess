@@ -366,7 +366,9 @@ a:hover{
   h2 {
     width: max-content;
   }
+}
 
+.work__header {
   h2::after {
     content: "";
     position: absolute;
@@ -656,17 +658,6 @@ body.gallery-open {
 
 .process__header {
   position: relative;
-  width: max-content;
-}
-
-.process__header::after {
-  content: "";
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  right: -50px;
-  transform: translateY(-50%);
-  background: url("img/green-heart.webp") center / contain no-repeat;
 }
 
 .process__items {
@@ -1093,7 +1084,6 @@ body.gallery-open {
 
 .packaging__title {
   margin: 0 0 30px;
-  font-size: 42px;
 }
 
 .packaging__description {
