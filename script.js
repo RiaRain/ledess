@@ -56,6 +56,51 @@ const reviewsSlider = new Swiper('.reviews__slider', {
   },
 });
 
+// Показать/скрыть полный отзыв
+
+function checkReviews() {
+  document.querySelectorAll('.reviews__card').forEach(card => {
+    const text = card.querySelector('.reviews__text');
+    const button = card.querySelector('.reviews__more');
+
+    if (!text || !button) return;
+
+    const wasExpanded = text.classList.contains('expanded');
+    if (wasExpanded) return;
+
+    const fullHeight = text.scrollHeight;
+    const lineHeight = parseFloat(getComputedStyle(text).lineHeight);
+    const maxHeight = lineHeight * 4;
+
+    button.hidden = fullHeight <= maxHeight + 1;
+  });
+}
+
+function initReviews() {
+  checkReviews();
+  reviewsSlider.update();
+}
+
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(initReviews);
+} else {
+  window.addEventListener('load', initReviews);
+}
+
+window.addEventListener('resize', checkReviews);
+
+document.querySelectorAll('.reviews__more').forEach(button => {
+  button.addEventListener('click', () => {
+    const text = button.previousElementSibling;
+    const expanded = text.classList.toggle('expanded');
+
+    button.textContent = expanded ? 'Скрыть' : 'Читать дальше';
+
+    // Обновляем высоту слайдера
+    reviewsSlider.update();
+  });
+});
+
 
 // Меню бургер
 

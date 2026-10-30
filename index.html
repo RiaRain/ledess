@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LeDess — Вязаные игрушки и изделия ручной работы</title>
   <meta name="description" content="LeDess — вязаные игрушки, шапки и изделия ручной работы. Уютные вещи, созданные с любовью и вниманием к каждой детали.">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png?v=2">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <header class="header">
 
       <div class="header__logo">
-        <a href="index.html">LeDess</a>
+        <a href="index.html"><img src="img/logo.png" alt="Логотип LEDESS"></a>
       </div>
 
       <button class="menu-close" type="button" aria-label="Закрыть меню">
@@ -35,7 +35,7 @@
           <li><a href="#about">О бренде</a></li>
           <li><a href="#works">Наши работы</a></li>
           <li><a href="#process">Процесс</a></li>
-          <!-- <li><a href="#stories">Истории</a></li> -->
+          <li><a href="#packaging">Упаковка</a></li>
           <li><a href="#reviews">Отзывы</a></li>
           <li><a href="#footer">Контакты</a></li>
         </ul>
@@ -148,13 +148,21 @@
       </div>
     </div>
 
-    <div class="work__card" data-category="toys" data-gallery='["img/works/teddy.webp"]'>
-      <img class="work__photo" src="img/works/teddy.webp" alt="Мишка" loading="lazy">
+    <div class="work__card" data-category="toys" data-gallery='["img/works/teddy-1.webp", "img/works/teddy-2.webp"]'>
+      <img class="work__photo" src="img/works/teddy-2.webp" alt="Мишка" loading="lazy">
       <div class="work__info">
         <p class="work__name">Мишка</p>
         <p class="work__material">Военный талисман</p>
       </div>
     </div>
+
+    <div class="work__card" data-category="toys" data-gallery='["img/works/cheb2-1.webp", "img/works/cheb2-2.webp"]'>
+        <img class="work__photo" src="img/works/cheb2-2.webp" alt="Чебурашка" loading="lazy">
+        <div class="work__info">
+          <p class="work__name">Чебурашка</p>
+          <p class="work__material">Военный талисман</p>
+        </div>
+      </div>
 
     </div>
     <div class="works__more">
@@ -179,7 +187,7 @@
         <img src="img/process/process-2.webp" alt="Ручная работа" class="process__photo" loading="lazy">
         <div class="process__info">
           <p class="process__title">Подбор пряжи</p>
-          <p class="process__description">Подбираю цвет, фактуру и&nbsp;оттенки, чтобы подчеркнуть характер будущего изделия.</p>
+          <p class="process__description">Подбираем цвет, фактуру и&nbsp;оттенки, чтобы подчеркнуть характер будущего изделия.</p>
         </div>
       </div>
 
@@ -195,7 +203,7 @@
         <img src="img/process/process-4.webp" alt="Ручная работа" class="process__photo" loading="lazy">
         <div class="process__info">
           <p class="process__title">Детали</p>
-          <p class="process__description">Добавляю последние штрихи, которые делают изделие особенным.</p>
+          <p class="process__description">Добавляем последние штрихи, которые делают изделие особенным.</p>
         </div>
       </div>
     </div>
@@ -309,6 +317,30 @@
 
     <div class="stories__pagination swiper-pagination"></div>
   </section> -->
+
+  <section class="packaging" id="packaging">
+    <div class="packaging__content">
+      <div class="packaging__info">
+        <p class="packaging__subtitle">Упаковка</p>
+        <h2 class="packaging__title">С&nbsp;любовью до последней детали</h2>
+        <p class="packaging__description">
+          Каждая работа заслуживает особенного оформления. Я&nbsp;уделяю внимание не только самому изделию, но и&nbsp;тому, как оно будет представлено. Нежная упаковка, аккуратные детали и&nbsp;немного тепла&nbsp;— ведь даже распаковка может стать маленьким приятным моментом.
+        </p>
+        <p class="packaging__accent">
+          Тепло, которое внутри.
+        </p>
+      </div>
+      <div class="packaging__image">
+        <img
+          src="img/packaging.webp"
+          alt="Упаковка"
+          class="packaging__photo"
+          loading="lazy"
+        >
+      </div>
+  </div>
+  </section>
+
   <section class="reviews" id="reviews">
     <h2 class="reviews__title">Слова, которые греют</h2>
 
@@ -318,33 +350,40 @@
         <article class="reviews__slide swiper-slide">
           <div class="reviews__card">
             <p class="reviews__text">
-              Очень красивая игрушка! Всё выполнено аккуратно,
-              а сама работа выглядит невероятно уютно.
+              Шапка выполнена в&nbsp;черном цвете, что делает ее очень стильной и&nbsp;универсальной.<br>
+              Качество материала шапки на высоте, отлично переживает стирки. Она очень мягкая и&nbsp;приятная на ощупь, а&nbsp;также хорошо сохраняет тепло.<br>
+              Кроме того, шапка очень удобная и&nbsp;не вызывает никакого дискомфорта при ношении. Она легко надевается и&nbsp;снимается, что тоже является большим плюсом.<br>
+              Замечательный вариант для холодной погоды.<br>
+              В&nbsp;целом, я&nbsp;очень довольна покупкой и&nbsp;рекомендую эту шапку.
             </p>
 
-            <p class="reviews__author">— Анна</p>
+            <button class="reviews__more" type="button" hidden>
+              Читать дальше
+            </button>
           </div>
         </article>
 
         <article class="reviews__slide swiper-slide">
           <div class="reviews__card">
             <p class="reviews__text">
-              Заказывала мишку в подарок. Получился замечательный,
-              добрый и очень милый подарок.
+              Спасибо большое, очень красивый зайчик с&nbsp;погремушкой, дочки в&nbsp;восторге! У&nbsp;вас большой талант, желаю успеха!
             </p>
 
-            <p class="reviews__author">— Мария</p>
+            <button class="reviews__more" type="button" hidden>
+              Читать дальше
+            </button>
           </div>
         </article>
 
         <article class="reviews__slide swiper-slide">
           <div class="reviews__card">
             <p class="reviews__text">
-              Спасибо за такую чудесную работу. Видно,
-              что каждая деталь сделана с любовью.
+              Спасибо большое!
             </p>
 
-            <p class="reviews__author">— Екатерина</p>
+            <button class="reviews__more" type="button" hidden>
+              Читать дальше
+            </button>
           </div>
         </article>
 
@@ -365,13 +404,11 @@
 
     <div class="reviews__pagination swiper-pagination"></div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <section class="footer__inner">
       <h2 class="footer__header">Спасибо, что заглянули!</h2>
 
-      <p class="footer__text">
-        Буду рада, если мои работы подарили Вам немного тепла и&nbsp;вдохновения
-      </p>
+      <p class="footer__text">Вам понравилась какая-то работа, хотите узнать о&nbsp;ней подробнее или просто пообщаться? Будем рады вашим сообщениям! Выбирайте удобную соцсеть ниже&nbsp;— давайте знакомиться!</p>
 
       <div class="footer__info">
         <div class="footer__copyright">
@@ -380,28 +417,23 @@
 
         <nav class="footer__socials" aria-label="Контакты">
           <ul class="footer__list">
+
             <li class="footer__item">
-              <a href="#" class="footer__link footer__link--mail">
-                Почта
+              <a href="https://vk.ru/away.php?to=https%3A%2F%2Fmax.ru%2Fu%2Ff9LHodD0cOKWF6H9mQuY6G6yrcgV3AWYg8Uz5BeNhnKuTCdl9Cqs-bVFZZo&utf=1" class="footer__link footer__link--max" target="_blank">
+                MAX
               </a>
             </li>
 
             <li class="footer__item">
-              <a href="#" class="footer__link footer__link--telegram">
-                Telegram
-              </a>
-            </li>
-
-            <li class="footer__item">
-              <a href="#" class="footer__link footer__link--geo">
-                Адрес
+              <a href="https://vk.ru/ellenaxsolotl" class="footer__link footer__link--vk" target="_blank">
+                ВКонтакте
               </a>
             </li>
           </ul>
         </nav>
 
         <div class="footer__dev">
-          <a href="#" class="footer__dev-link">Разработка сайта</a>
+          <a href="https://t.me/BereznevaV_pixel"  target="_blank" class="footer__dev-link">Разработка сайта</a>
         </div>
       </div>
     </section>
