@@ -24,7 +24,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -332,9 +331,7 @@ a:hover{
 
 @media (min-width: 601px) and (max-width: 1000px) {
   .banner::before {
-    background:
-      linear-gradient(to right, var(--color-light) 0%, var(--color-light) 5%, transparent 100%),
-      url("img/banner_bg_desktop-2.webp?v=4") right center / cover no-repeat;
+    background: url("img/banner_bg_tablet.webp") right center / cover no-repeat;
   }
 }
 
@@ -497,7 +494,7 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 100px;
   visibility: hidden;
   opacity: 0;
   transition: opacity .3s ease, visibility .3s ease;
@@ -568,7 +565,7 @@ a:hover{
 .gallery__close {
   z-index: 2;
   top: -20px;
-  right: -20px;
+  right: -70px;
   width: 45px;
   height: 45px;
   font-size: 28px;
@@ -634,8 +631,9 @@ body.gallery-open {
 }
 
 @media (max-width: 700px) {
+
   .gallery {
-    padding: 20px;
+    padding: 30px;
   }
 
   .gallery__image {
@@ -648,6 +646,7 @@ body.gallery-open {
     top: 50%;
     width: 42px;
     height: 42px;
+    z-index: 10;
   }
 
   .gallery__prev {
